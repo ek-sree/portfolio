@@ -1,15 +1,25 @@
 import React from 'react';
 
-const Navbar = () => {
+interface NavbarProps {
+  scrollToSection: (section: 'home' | 'about' | 'projects' | 'skills' | 'contact') => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
   return (
-    <div className='bg-slate-700'>
-      <ul className='flex absolute top-10 left-[38rem] items-center justify-center gap-4 p-4 rounded-3xl font-serif text-slate-400 cursor-pointer border-4 border-transparent bg-gradient-to-r'>
-        <li className='hover:text-slate-300'>Home</li>
-        <li className='hover:text-slate-300'>Project</li>
-        <li className='hover:text-slate-300'>Skills</li>
-        <li className='hover:text-slate-300'>Contact</li>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-700 bg-opacity-80 backdrop-blur-sm">
+      <ul className="flex justify-center items-center gap-6 p-4 font-serif text-slate-400">
+        {(['home', 'about', 'projects', 'skills', 'contact'] as const).map((section) => (
+          <li key={section}>
+            <button
+              onClick={() => scrollToSection(section)}
+              className="hover:text-slate-300 transition-colors duration-200 capitalize"
+            >
+              {section}
+            </button>
+          </li>
+        ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 
