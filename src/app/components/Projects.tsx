@@ -1,52 +1,38 @@
+import { data } from "@/constant/projects";
 import { HoverEffect } from "./ui/card-hover-effect"
+import { useState } from "react";
 
 const Projects = () => {
-    const projects = [
-        {
-          title: "Stripe",
-          description:
-            "A technology company that builds economic infrastructure for the internet.",
-          link: "https://stripe.com",
-        },
-        {
-          title: "Netflix",
-          description:
-            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-          link: "https://netflix.com",
-        },
-        {
-          title: "Google",
-          description:
-            "A multinational technology company that specializes in Internet-related services and products.",
-          link: "https://google.com",
-        },
-        {
-          title: "Meta",
-          description:
-            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-          link: "https://meta.com",
-        },
-        {
-          title: "Amazon",
-          description:
-            "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-          link: "https://amazon.com",
-        },
-        {
-          title: "Microsoft",
-          description:
-            "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-          link: "https://microsoft.com",
-        },
-      ];
+
+  const [show, setShow] = useState(6);
+
+  const handleShowMore = ()=>{
+    setShow((prev)=>prev+6);
+  }
+
+  const projects = data.map(({id,title, description})=>({
+    title,
+    description,
+    link:`/project/${id}`
+  }))
+
+      
   return (
     <div>
         <div className="flex justify-center mt-9">
         <h5 className="text-3xl border-b-2 text-purple-500">My Works.</h5>
         </div>
         <div className="max-w-5xl mx-auto px-8">
-      <HoverEffect items={projects} />
+      <HoverEffect items={projects.slice(0, show)} />
     </div>
+    {show < projects.length &&(
+      <div className="flex justify-center mt-8">
+        <button className="relative overflow-hidden border border-purple-500   hover:bg-purple-500 text-white px-4 py-2 rounded-md transition-colors duration-300 ease-in-out group" onClick={handleShowMore}>
+          <span className="relative z-10 text-purple-500 group-hover:text-white transition-colors duration-300 ease-in-out">Show More</span>
+          <span className="absolute inset-0 bg-purple-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+        </button>
+      </div>
+    )}
     </div>
   )
 }

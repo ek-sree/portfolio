@@ -101,7 +101,7 @@ const Contact = () => {
             </div>
             <div>
               <label htmlFor="message" className="block text-white mb-2">Message :</label>
-              <textarea value={message} onChange={e=>setMessage(e.target.value)} name="message" id="" placeholder='Message' className="text-slate-700 w-full px-3 py-2 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" rows="5" required></textarea>
+              <textarea value={message} onChange={e=>setMessage(e.target.value)} name="message" id="" placeholder='Message' className="text-slate-700 w-full px-3 py-2 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" rows={5} required></textarea>
               {error.message && <p className="text-red-500">{error.message}</p>}
             </div>
             <div className="flex justify-center">
