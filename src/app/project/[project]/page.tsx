@@ -48,12 +48,12 @@ export default function ProjectPage({ params }: Props) {
         >
           GitHub
         </Link>
-        <Link
+        {project.live &&(<Link
           href={project.live}
           className="bg-purple-600 hover:bg-purple-700 py-2 px-5 rounded-lg"
         >
           Live
-        </Link>
+        </Link>)}
       </div>
 
       <div className="mt-10 sm:mt-20">
