@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useRef } from 'react'
-import aboutImg from '../../public/a5a7f018cf7942eda56841879934f318.jpeg'
+import aboutImg from '../../../public/a5a7f018cf7942eda56841879934f318.jpeg'
 import { motion, useScroll } from 'framer-motion';
 
 const About = () => {

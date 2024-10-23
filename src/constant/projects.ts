@@ -1,56 +1,59 @@
-import hirehub1 from '../public/hirehub1.png'
-import hirehub2 from '../public/hirehub2.png'
-import hirehub3 from '../public/hirehub3.png'
-import hirehub4 from '../public/hirehub4.png'
-import hirehub5 from '../public/hirehub5.png'
-import hirehub6 from '../public/hirehub6.png'
-import hirehub from '../public/hirehub.png'
-import hirehub7 from '../public/hirehub7.png'
-import hirehub8 from '../public/hirehub8.png'
-import hirehub9 from '../public/hirehub9.png'
-import hirehub10 from '../public/hirehub10.png'
-import hirehub11 from '../public/hirehub11.png'
-import hirehub12 from '../public/hirehub12.png'
-import hirehub13 from '../public/hirehub13.png'
-import hirehub14 from '../public/hirehub14.png'
-import hirehub15 from '../public/hirehub15.png'
-import hirehub16 from '../public/hirehub16.png'
+import hirehub1 from '../../public/hirehub1.png'
+import hirehub2 from '../../public/hirehub2.png'
+import hirehub3 from '../../public/hirehub3.png'
+import hirehub4 from '../../public/hirehub4.png'
+import hirehub5 from '../../public/hirehub5.png'
+import hirehub6 from '../../public/hirehub6.png'
+import hirehub from '../../public/hirehub.png'
+import hirehub7 from '../../public/hirehub7.png'
+import hirehub8 from '../../public/hirehub8.png'
+import hirehub9 from '../../public/hirehub9.png'
+import hirehub10 from '../../public/hirehub10.png'
+import hirehub11 from '../../public/hirehub11.png'
+import hirehub12 from '../../public/hirehub12.png'
+import hirehub13 from '../../public/hirehub13.png'
+import hirehub14 from '../../public/hirehub14.png'
+import hirehub15 from '../../public/hirehub15.png'
+import hirehub16 from '../../public/hirehub16.png'
 
-import timezone from '../public/timezone/1.png'
-import timezone1 from '../public/timezone/2.png'
-import timezone2 from '../public/timezone/3.png'
-import timezone3 from '../public/timezone/4.png'
-import timezone4 from '../public/timezone/5.png'
-import timezone5 from '../public/timezone/6.png'
-import timezone6 from '../public/timezone/7.png'
-import timezone7 from '../public/timezone/8.png'
-import timezone8 from '../public/timezone/9.png'
-import timezone9 from '../public/timezone/10.png'
-import timezone10 from '../public/timezone/11.png'
-import timezone11 from '../public/timezone/12.png'
-import timezone12 from '../public/timezone/13.png'
-import timezone13 from '../public/timezone/14.png'
-import timezone14 from '../public/timezone/15.png'
-import timezone15 from '../public/timezone/16.png'
-import timezone16 from '../public/timezone/17.png'
-import timezone17 from '../public/timezone/18.png'
-import timezone18 from '../public/timezone/19.png'
+import timezone from '../../public/timezone/1.png'
+import timezone1 from '../../public/timezone/2.png'
+import timezone2 from '../../public/timezone/3.png'
+import timezone3 from '../../public/timezone/4.png'
+import timezone4 from '../../public/timezone/5.png'
+import timezone5 from '../../public/timezone/6.png'
+import timezone6 from '../../public/timezone/7.png'
+import timezone7 from '../../public/timezone/8.png'
+import timezone8 from '../../public/timezone/9.png'
+import timezone9 from '../../public/timezone/10.png'
+import timezone10 from '../../public/timezone/11.png'
+import timezone11 from '../../public/timezone/12.png'
+import timezone12 from '../../public/timezone/13.png'
+import timezone13 from '../../public/timezone/14.png'
+import timezone14 from '../../public/timezone/15.png'
+import timezone15 from '../../public/timezone/16.png'
+import timezone16 from '../../public/timezone/17.png'
+import timezone17 from '../../public/timezone/18.png'
+import timezone18 from '../../public/timezone/19.png'
 
-import aadharOCR from '../public/AAdharOCR/Screenshot (290).png'
-import aadharOC1 from '../public/AAdharOCR/aadharocr2.png'
+import aadharOCR from '../../public/AAdharOCR/Screenshot (290).png'
+import aadharOC1 from '../../public/AAdharOCR/aadharocr2.png'
 
-import netflixGpt1 from '../public/netflixgpt/1.png'
-import netflixGpt2 from '../public/netflixgpt/2.png'
-import netflixGpt3 from '../public/netflixgpt/3.png'
-import netflixGpt4 from '../public/netflixgpt/4.png'
-import netflixGpt5 from '../public/netflixgpt/5.png'
+import netflixGpt1 from '../../public/netflixgpt/1.png'
+import netflixGpt2 from '../../public/netflixgpt/2.png'
+import netflixGpt3 from '../../public/netflixgpt/3.png'
+import netflixGpt4 from '../../public/netflixgpt/4.png'
+import netflixGpt5 from '../../public/netflixgpt/5.png'
 
-import olx1 from '../public/olk-clone/1.png'
-import olx2 from '../public/olk-clone/2.png'
-import olx3 from '../public/olk-clone/3.png'
+import olx1 from '../../public/olk-clone/1.png'
+import olx2 from '../../public/olk-clone/2.png'
+import olx3 from '../../public/olk-clone/3.png'
 
-import todo1 from '../public/todo/todo1.png'
-import todo2 from '../public/todo/todo2.png'
+import todo1 from '../../public/todo/todo1.png'
+import todo2 from '../../public/todo/todo2.png'
+
+import rest1 from '../../public/resturant/1 (1).png'
+import rest2 from '../../public/resturant/1 (2).png'
 
 export const data = [
     {
@@ -164,17 +167,20 @@ export const data = [
       },
       {
         id: 7,
-        title: "TimeZone",
-        description: "A watch store",
-        technology: "ejs, express, mongodb",
+        title: "Resturantz",
+        description: "A restaurant-like app showcasing food spots",
+        details:"Developed a restaurant finder application that displays various food spots, allowing users to browse and discover restaurants. The app also includes an offline status feature, which indicates when the user loses internet connectivity. Built using React, Tailwind CSS, and Parcel, it utilizes custom hooks to track online/offline status.",
+        technology: ["React", "Tailwind CSS", "Parcel"],
+        features:[
+          "Showcase various food spots with images and details.",
+          "Implement offline status indicator using custom hooks and JavaScript event listeners.",
+          "Responsive design using Tailwind CSS for an enhanced user experience.",
+          "Easy navigation and filtering options for users to find their desired restaurants."
+        ],
+        architecture: ["Component-based architecture"],
+        github: "https://github.com/ek-sree/react-app.git",
+        images:[rest1,rest2],
         link: "/projects/7",
-      },
-      {
-        id: 8,
-        title: "TimeZone",
-        description: "A watch store",
-        technology: "ejs, express, mongodb",
-        link: "/projects/8",
       },
   ];
   

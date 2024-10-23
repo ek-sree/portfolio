@@ -10,6 +10,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Link from "next/link";
+import Resume from "./Resume";
 
 const Home = () => {
   const sectionRefs = {
@@ -29,10 +30,7 @@ const Home = () => {
       <section ref={sectionRefs.home} className="h-screen flex items-center justify-center">
         <BackgroundBeamsWithCollision>
           <div className="text-center text-white">
-            <div className="absolute top-4 right-4 z-10  overflow-hidden border border-green-500   hover:bg-green-500 text-white px-4 py-2 rounded-md transition-colors duration-300 ease-in-out group" >
-         <Link href='/resume'> <span className="relative z-10 text-green-500 group-hover:text-white transition-colors duration-300 ease-in-out">Resume</span></Link>
-          <span className="absolute inset-0 bg-green-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-            </div>
+            <Resume/>
             <h1 className="text-2xl bg-gradient-to-r from-gradient-rose to-gradient-blue bg-clip-text text-transparent">
               Hello! my name is,
             </h1>

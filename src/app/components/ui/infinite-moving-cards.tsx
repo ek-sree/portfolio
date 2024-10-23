@@ -102,8 +102,8 @@ export const InfiniteMovingCards = ({
               src={item.image}
               alt={`skill-${idx}`}
               className="rounded-lg"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
             />
           </li>
         ))}
