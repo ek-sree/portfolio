@@ -20,7 +20,7 @@ const config: Config = {
       animation: {
         aurora: "aurora 60s linear infinite",
         scroll:
-        "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         aurora: {
@@ -36,6 +36,14 @@ const config: Config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+      },
+      fontFamily: {
+        fontTitle: ["Merriweather", "serif"], 
+        fontPara:['Rajdhani']
+      },
+      fontWeight: {
+        regular: "400",  
+        bold: "900",     
       },
     },
   },

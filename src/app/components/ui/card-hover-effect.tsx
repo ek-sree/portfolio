@@ -52,7 +52,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle className="text-2xl text-center underline">{item.title}</CardTitle>
+            <CardTitle className="text-2xl text-center">{item.title}</CardTitle>
             <CardDescription className="mb-9 text-md">{item.description}</CardDescription>
             <p className="mt-4 text-sm text-indigo-500 font-semibold group-hover:underline text-center">
         Click to view more..

@@ -12,9 +12,10 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
           <li key={section}>
             <button
               onClick={() => scrollToSection(section)}
-              className="hover:text-slate-300 transition-colors duration-200 capitalize"
+              className="relative overflow-hidden group"
             >
-              {section}
+              <span className="hover:text-slate-300 transition-colors duration-200 capitalize">{section}</span>
+              <span className="absolute left-0 right-0 bottom-0 h-[2px] bg-slate-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
             </button>
           </li>
         ))}
