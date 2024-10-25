@@ -1,9 +1,9 @@
 import Home from "./components/Home";
 
-export default function page() {
+export default function Page() {
   return (
-   <div>
-    <Home/>
-   </div>
+    <main className="min-h-screen">
+      <Home />
+    </main>
   );
 }

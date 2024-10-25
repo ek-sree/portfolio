@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { data } from "@/constant/projects";
 import notFound from "../../not-found";
-import { useCallback } from "react";
 
 type Props = {
   params: { project: string; image: string };

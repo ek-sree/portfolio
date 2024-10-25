@@ -84,7 +84,6 @@ const Contact = () => {
       <div className='max-w-5xl mx-auto p-8'>
           <Toaster position="top-center" expand={false} richColors />
           
-          {/* Enhanced Title with gradient underline */}
           <h1 className='text-4xl font-bold text-center mb-12 inline-block relative w-full
               after:content-[""] after:absolute after:w-1/4 after:h-1 
               after:bg-gradient-to-r after:from-indigo-500 after:to-transparent 
@@ -93,13 +92,11 @@ const Contact = () => {
           </h1>
 
           <div className="flex flex-col md:flex-row items-start justify-between gap-12">
-              {/* Enhanced Form Section */}
               <div className='md:w-2/3 w-full'>
                   <form className='backdrop-blur-sm bg-gray-800/30 p-8 rounded-2xl shadow-2xl 
                       border border-gray-700/50 space-y-6 hover:border-gray-600/50 
                       transition-all duration-300'>
                       
-                      {/* Name Field */}
                       <div className="group">
                           <label className="block text-gray-300 mb-2 text-sm uppercase tracking-wider">
                               Name
@@ -117,7 +114,6 @@ const Contact = () => {
                           {error.name && <p className="text-rose-500 text-sm mt-1">{error.name}</p>}
                       </div>
 
-                      {/* Email Field */}
                       <div className="group">
                           <label className="block text-gray-300 mb-2 text-sm uppercase tracking-wider">
                               Email
@@ -135,7 +131,6 @@ const Contact = () => {
                           {error.email && <p className="text-rose-500 text-sm mt-1">{error.email}</p>}
                       </div>
 
-                      {/* Message Field */}
                       <div className="group">
                           <label className="block text-gray-300 mb-2 text-sm uppercase tracking-wider">
                               Message
@@ -153,7 +148,6 @@ const Contact = () => {
                           {error.message && <p className="text-rose-500 text-sm mt-1">{error.message}</p>}
                       </div>
 
-                      {/* Enhanced Submit Button */}
                       <div className="flex justify-center pt-4">
                           <button
                               onClick={handleSumbit}
@@ -189,7 +183,6 @@ const Contact = () => {
                   </form>
               </div>
 
-              {/* Enhanced Social Links Section */}
               <div className='w-full md:w-1/3 flex flex-row md:flex-col justify-center md:justify-start 
                   items-center gap-8 md:gap-12 p-8 md:sticky md:top-24'>
                   <Link 

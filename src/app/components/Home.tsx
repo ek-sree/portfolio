@@ -28,13 +28,12 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-black text-white relative">
       <div className="mb-9">
-
-      <Navbar scrollToSection={scrollToSection} />
+        <Navbar scrollToSection={scrollToSection} />
       </div>
       
-      <section ref={sectionRefs.home} className="h-screen relative overflow-hidden">
+      <section ref={sectionRefs.home} className="h-90vh relative overflow-hidden">
         <BackgroundBeamsWithCollision>
-          <div className="absolute top-4 right-4 z-20">
+          <div className="absolute top-4 right-4 z-20 md:mb-0 md:right-8 md:top-8">
             <Resume />
           </div>
           
@@ -46,6 +45,8 @@ const Home = () => {
                 transition={{ duration: 0.6 }}
                 className="space-y-2"
               >
+                <div className="mt-9">
+
                 <p className="text-lg font-light tracking-wider text-gray-400 mb-10">
                   Hello! my name is
                 </p>
@@ -57,6 +58,7 @@ const Home = () => {
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
                     <TypewriterEffect words={["Developer", "Designer"]} />
                   </span>
+                </div>
                 </div>
               </motion.div>
 
@@ -80,14 +82,14 @@ const Home = () => {
                 <button 
                   onClick={() => scrollToSection('projects')}
                   className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium 
-                    hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 mb-10"
+                    hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 mb-16"
                 >
                   View My Work
                 </button>
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="px-6 py-3 rounded-full border border-gray-500 text-gray-300 font-medium
-                    hover:border-purple-500 hover:text-purple-400 transition-all duration-300 mb-10"
+                    hover:border-purple-500 hover:text-purple-400 transition-all duration-300 mb-16"
                 >
                   Get in Touch
                 </button>
