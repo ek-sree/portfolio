@@ -11,6 +11,7 @@ const Projects = () => {
   };
 
   const projects = data.map(({ id, title, description }) => ({
+    id,
     title,
     description,
     link: `/project/${id}`,
