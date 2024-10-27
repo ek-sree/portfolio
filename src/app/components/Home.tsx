@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React, { useRef } from "react";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
@@ -33,7 +33,7 @@ const Home = () => {
       
       <section ref={sectionRefs.home} className="h-90vh relative overflow-hidden">
         <BackgroundBeamsWithCollision>
-          <div className="absolute top-4 right-4 z-20 md:mb-0 md:right-8 md:top-8">
+          <div className="absolute top-4 left-[400px] z-20 md:top-8 md:right-8 sm:top-5 sm:right-4">
             <Resume />
           </div>
           
@@ -46,19 +46,18 @@ const Home = () => {
                 className="space-y-2"
               >
                 <div className="mt-9">
-
-                <p className="text-lg font-light tracking-wider text-gray-400 mb-10">
-                  Hello! my name is
-                </p>
-                <h1 className="text-7xl font-bold font-mono bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent pb-2">
-                  Sreehari E K
-                </h1>
-                <div className="text-2xl font-light tracking-wide">
-                  I am a{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-                    <TypewriterEffect words={["Developer", "Designer"]} />
-                  </span>
-                </div>
+                  <p className="text-lg font-light tracking-wider text-gray-400 mb-10 pt-32">
+                    Hello! my name is
+                  </p>
+                  <h1 className="text-5xl md:text-7xl font-bold font-mono bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent pb-2">
+                    Sreehari E K
+                  </h1>
+                  <div className="text-xl md:text-2xl font-light tracking-wide">
+                    I am a{" "}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+                      <TypewriterEffect words={["Developer", "Designer"]} />
+                    </span>
+                  </div>
                 </div>
               </motion.div>
 
@@ -82,14 +81,14 @@ const Home = () => {
                 <button 
                   onClick={() => scrollToSection('projects')}
                   className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium 
-                    hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 mb-16"
+                    hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 mb-24"
                 >
                   View My Work
                 </button>
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="px-6 py-3 rounded-full border border-gray-500 text-gray-300 font-medium
-                    hover:border-purple-500 hover:text-purple-400 transition-all duration-300 mb-16"
+                    hover:border-purple-500 hover:text-purple-400 transition-all duration-300 mb-24"
                 >
                   Get in Touch
                 </button>

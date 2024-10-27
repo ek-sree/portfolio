@@ -31,7 +31,7 @@ export default function ResumePage() {
 
       <div className="pdf-container mt-8 mx-auto" style={{ width: '90%', height: 'auto', overflow: 'auto' }}>
         <Worker workerUrl={`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`}>
-          <Viewer fileUrl="/resume/Sreehari.pdf" />
+          <Viewer fileUrl="/resume/Sreehari E K.pdf" />
         </Worker>
       </div>
     </div>
