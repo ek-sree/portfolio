@@ -4,7 +4,6 @@ import nodemailer from 'nodemailer';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
-console.log("nnn",name,email,message);
 
     const transporter = nodemailer.createTransport({
       service: 'gmail', 
@@ -33,6 +32,8 @@ console.log("nnn",name,email,message);
       await transporter.sendMail(mailOptions);
       return res.status(200).json({ success: true });
     } catch (error) {
+      console.log("error",process.env.EMAIL_USER);
+      
       console.error('Error sending email:', error);
       return res.status(500).json({ error: 'Failed to send email' });
     }

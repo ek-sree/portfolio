@@ -23,8 +23,8 @@ const Resume = () => {
 
   const handleDownload = () => {
     try {
-      const resumePath = '/resume/Sreehari.pdf'
-      
+      const resumePath = '/resume/Sreehari E K.pdf'
+
       const link = document.createElement('a')
       link.href = resumePath
       link.setAttribute('download', 'Sreehari E K.pdf')      
